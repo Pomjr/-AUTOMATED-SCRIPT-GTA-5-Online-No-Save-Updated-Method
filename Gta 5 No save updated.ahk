@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 
 ; --- AUTOMATIC ADMIN ELEVATION ---
 if not A_IsAdmin {
@@ -131,8 +131,6 @@ RunMacroLoop() {
         
         SendEvent("m") 
         TextFeedback("[Macro State] Outfits Changed. Waiting 8 Seconds for Cloud Sync", true)
-        
-        ; FIXED: Increased from 5000 to 8000 (8 seconds) to allow reliable cloud saving
         Sleep(8000)    
         
         stepState := 5
@@ -180,14 +178,15 @@ LoadClosedFriendSession() {
     
     TextFeedback("[Macro State] Navigating Menu to Launch Closed Friend Session", true)
     
+    ; FIXED TABS TRAJECTORY: Kept 1st Right arrow press at 300ms, sped the rest up to 40ms
     SendEvent("{Right}")
     Sleep(300)
     SendEvent("{Right}")
-    Sleep(300)
+    Sleep(40)
     SendEvent("{Right}")
-    Sleep(300)
+    Sleep(40)
     SendEvent("{Right}")
-    Sleep(300)
+    Sleep(40)
     SendEvent("{Right}")
     Sleep(600)      
     
