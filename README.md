@@ -13,3 +13,5 @@ This Script also has a manual NoSave on and off feature:
 * **Numpad 3**: Disable NoSave
 
 Right before you finish a heist, press Numpad 2 to enable NoSave, then let the cutscene play out. It should say saving failed and couldn't connect to Rockstar servers. When the cutscene is over, and you get control of your online character again, press Numpad 1. This runs the automated script of taking you to story mode, disabling no save automatically, then going back into online, changing your outfit to force save your game, going back into story mode, then back into online, then you're ready to do the same heist again.
+
+Method of Force Save/NoSave based off this reddit post: [https://www.reddit.com/r/gtaglitches/comments/1uyk3dy/workaround_new_gta_online_heist_replay_nosave_fix/](url)
